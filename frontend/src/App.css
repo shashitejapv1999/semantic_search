@@ -1,0 +1,159 @@
+.App {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: white; /* Ensuring text is readable on a black background */
+  background-color: #000; /* Black background */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-header {
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white for contrast */
+  border-radius: 15px;
+  padding: 40px;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2); /* White shadow for a subtle glow */
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.App-header:hover {
+  transform: scale(1.02);
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #ff477e; /* Bright color for contrast */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #ff6396;
+}
+
+input[type="text"], input[type="file"] {
+  padding: 8px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #ff477e; /* Bright border color for visual appeal */
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.1); /* Slightly visible for depth */
+  color: white; /* Text color inside input */
+  transition: border-color 0.2s ease;
+}
+
+input[type="text"]:focus, input[type="file"]:hover {
+  border-color: #ff6396;
+}
+
+.search-results {
+  background: rgba(255, 255, 255, 0.1); /* Maintaining theme consistency */
+  border-radius: 15px;
+  padding: 20px;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2); /* Subtle white shadow for depth */
+}
+
+.upload-success {
+  color: #28a745; /* Green color for success messages */
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.result-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-family:'Times New Roman', Times, serif;
+  border-bottom: 1px solid #eee; /* Light border for separation */
+  transition: background-color 0.2s ease;
+}
+
+.result-item:last-child {
+  border-bottom: none;
+}
+
+.result-item:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Highlight on hover */
+}
+
+p {
+  font-size: 18px;
+  color: white; /* White text for readability */
+  font-weight: bold;
+}
+.upload-button, .search-button {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.upload-button:hover, .search-button:hover {
+  background-color: #45a049;
+}
+
+.search-input {
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+table {
+  width: 100%; /* Use full width of the container */
+  max-width: none; /* Remove any maximum width restriction */
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: #62489d;
+}
+
+th, td {
+  padding: 15px 20px; /* Increase padding for more space around text */
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ccc; 
+  white-space: normal; /* Allow text to wrap within the cell */
+}
+
+th {
+  background-color: #4C4C4C; /* Dark background for headers */
+  color: white; /* White text color for headers */
+  font-size: 18px;
+}
+
+tr:nth-child(even) {
+  background-color: #62489d; /* Zebra striping for rows */
+}
+
+tr:hover {
+  background-color: #3f3939; /* Hover effect for rows */
+}
+
+/* Make the table scrollable when screen width is small */
+.table-container {
+  overflow-x: auto; /* Enables horizontal scrolling */
+}
